@@ -19,6 +19,10 @@ typedef Process ConnectionClient;
 #include <WiFiClientSecure.h>
 typedef WiFiClientSecure ConnectionClient;
 
+#elif ARDUINO_UNO_GSM
+#include <GSM.h>
+typedef GSMClient ConnectionClient;
+
 #endif
 
 #endif //__CONNECTION_CLIENT_H__
